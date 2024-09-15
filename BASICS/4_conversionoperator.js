@@ -58,5 +58,8 @@ let stringnumber= String(somenumber)
 console.log(typeof stringnumber);
 console.log(stringnumber);
 
-
+//OPERATION:
+//let value=3
+//let negvalue= -value
+//console.log(negvalue);
 
