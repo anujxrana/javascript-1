@@ -53,4 +53,26 @@ console.log(typeof outsideTemp);
 
 console.log(typeof myFunction);
 
+//************************************MEMORY***********************************
+// STACK MEMORY USED IN PRIMITIVE TYPE: HERE THE COPY OF VARIABLE DECLARED IS GIVEN, HERE CHANGES ARE DONE IN THE COPY
+//HEAP MEMORY IS USED IN NON-PRIMITIVE TYPE(REFERENCE MEMORY): HERE THE REFERNCE OF THE VARIABLE IS GIVEN. HERE CHANGES ARE DONE IN ORIGINAL VALUES
+console.log("For Memory");
+
+let myYoutubename="Anujxrana"//goes in stack
+let anothername= myYoutubename
+anothername="anujjj"//here change is doen in the copy so the original value will remain the same.
+console.log(myYoutubename);
+console.log(anothername);
+//stack: one on one
+//heap:here refence of user 1 is given to user 2 not a copy. 
+let user1={ 
+    email: "anujrana@mail.com",
+    upi:"user@hdfc"
+}
+let user2=user1
+//accessing in user2
+user2.email="anuj@google.com"// here the changes have been done in user 1 and its reference is given upon here. so changesa are applied over here.
+console.log(user2.email);
+console.log(user1.email);
+
 
